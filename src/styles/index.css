@@ -10,3 +10,6 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.custom-bg {
+    background-color: #e9e6e6;
+  }

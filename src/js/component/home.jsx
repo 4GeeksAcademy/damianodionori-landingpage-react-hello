@@ -10,10 +10,10 @@ import { CardContainer } from "./cardcontainer";
 const Home = () => {
   return (
     <>
-      <Navbar />,
-	  <Jumbotron />,
-	  <CardContainer />,
-	  <Footer />,
+	  <Navbar />
+	  <Jumbotron />
+	  <CardContainer />
+	  <Footer />
     </>
   );
 };

@@ -2,40 +2,52 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div className="container-fluid">
-        <a className="navbar-brand" style="color: darkgray;" href="#">
-          Start Bootstrap
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div className="navbar-nav">
-            <a className="nav-link" href="#">
-              Home
-            </a>
-            <a className="nav-link" href="#">
-              About
-            </a>
-            <a className="nav-link" href="#">
-              Services
-            </a>
-            <a className="nav-link" href="#">
-              Contact
-            </a>
-          </div>
-        </div>
-      </div>
-    </nav>
+    <div className="container-fluid p-0">
+			<nav className="navbar navbar-expand-lg navbar-dark bg-dark px-5">
+				<div className="container">
+					<a className="navbar-brand" href="#">
+						Start Bootstrap
+					</a>
+					<button
+						className="navbar-toggler"
+						type="button"
+						data-toggle="collapse"
+						data-target="#navbarNavDropdown"
+						aria-controls="navbarNavDropdown"
+						aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span className="navbar-toggler-icon"></span>
+					</button>
+					<div
+						className="collapse navbar-collapse  justify-content-end"
+						id="navbarNavDropdown">
+						<ul className="nav navbar-nav navbar-right">
+							<li className="nav-item active">
+								<a className="nav-link text-white" href="#">
+									Home{" "}
+									<span className="sr-only">(current)</span>
+								</a>
+							</li>
+							<li className="nav-item">
+								<a className="nav-link" href="#">
+									About
+								</a>
+							</li>
+							<li className="nav-item">
+								<a className="nav-link" href="#">
+									Services
+								</a>
+							</li>
+							<li className="nav-item">
+								<a className="nav-link" href="#">
+									Contact
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
   );
 };
 

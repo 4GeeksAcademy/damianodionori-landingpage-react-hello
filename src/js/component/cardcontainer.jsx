@@ -1,15 +1,13 @@
 import React from "react";
-import cardImage from "../../img/rigo-baby.jpg";
+import PropTypes from 'prop-types'
 
-const Card = () => {
+const Card = (props) => {
     return (
       <div className="card" style={{ width: '100%', margin: '15px', padding: '15px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-        <img src={cardImage} className="card-img-top" alt="..." />
+        <img src="https://placehold.co/500x325" className="card-img-top" alt="..." />
         <div className="card-body text-center">
           <h5 className="card-title">Card title</h5>
-          <p className="card-text">
-            Some quick example text to build on the card title and make up the bulk of the card's content.
-          </p>
+          <p className="card-text">{props.content}</p>
           <a href="#" className="btn btn-primary">
             Find Out More!
           </a>
@@ -18,13 +16,17 @@ const Card = () => {
     );
   }
 
+  Card.propTypes = {
+    content: PropTypes.string,
+  };
+
   const CardContainer = () => {
     return (
       <div style={{ display: 'flex' }}>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <Card content="Is this ok, Leo? Please, accept my project. Mark it has approved!" />
+        <Card content="Vivamus et felis finibus, pretium erat quis, faucibus diam." />
+        <Card content="Cras eleifend, eros ac finibus ultricies, nibh orci molestie augue, eget tempus libero dui id tortor." />
+        <Card content="Fusce venenatis aliquam massa, a lobortis ex condimentum eget." />
       </div>
     );
   }

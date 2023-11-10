@@ -1,12 +1,12 @@
 import React from "react";
 import { NavItem } from "./navitem";
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-4">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
-          Start Bootstrap
+          {props.mainItem}
         </a>
         <button
           className="navbar-toggler"

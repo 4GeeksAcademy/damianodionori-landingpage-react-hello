@@ -17,7 +17,9 @@ const Home = () => {
     button="Call to Action!"
     />
 	  <CardContainer />
-	  <Footer />
+	  <Footer
+    content="Copyright © Damiano's Website 2023"
+    />
     </>
   );
 };

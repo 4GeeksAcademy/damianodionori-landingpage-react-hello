@@ -10,7 +10,7 @@ const Card = (props) => {
           <h5 className="card-title">{props.title}</h5>
           <p className="card-text">{props.content}</p>
         </div>
-        <div className="text-center" style={{ marginTop: '20px'}}>
+        <div className="text-center">
           <a href="#" className="btn btn-primary my-button">
             {props.button}
           </a>

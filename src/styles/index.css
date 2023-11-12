@@ -12,12 +12,16 @@
 */
 .custom-bg {
     background-color: #e9e6e6;
-  }
+}
 
-  .my-button {
+.my-button {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-  }
+}
+
+.text-center {
+    margin-top: 20px;
+}
   
   
